@@ -20,3 +20,23 @@ html {
     /*Tipography*/
     --RegularSize: 16px;
 }
+
+body {
+    background-color: rgb(246, 205, 255);
+}
+
+#main-container {
+    position: relative;
+}
+
+.main-container--background {
+    width: 100%;
+}
+
+.card-container {
+    width: 85%;
+    position: absolute;
+    top: 35%;
+    left: 7%;
+    background-color: white;
+}
