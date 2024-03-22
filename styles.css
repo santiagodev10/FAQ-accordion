@@ -79,12 +79,17 @@ body {
 .item--default-container {
     display: flex;
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .item--question {
     font-size: 14px;
     font-weight: 700;
     color: var(--DarkPurple);
+}
+
+.item--question:hover {
+    color: rgb(173, 40, 235);
 }
 
 .item--paragraph-drop {
