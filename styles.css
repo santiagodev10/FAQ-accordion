@@ -26,6 +26,8 @@ body {
 }
 /*El position relative es para poder acomodar la tarjeta con position absolute y que tome como referencia a este contenedor*/
 #main-container {
+    display: flex;
+    justify-content: center;
     position: relative;
 }
 /*La imagen de fondo mide todo el contenedor principal*/
@@ -33,14 +35,19 @@ body {
     width: 100%;
 }
 
+.main-container--background-desktop {
+    display: none;
+}
+
 .card-container {
     width: 85%;
+    max-width: 500px;
     position: absolute;
-    top: 32%;
-    left: 7%;
+    top: 30%;
     background-color: var(--White);
     border-radius: 5px;
     padding: 15px;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.2);;
 }
 
 .card-container--title {
@@ -49,7 +56,7 @@ body {
 }
 
 .title--icon-star {
-    width: 20px;
+    width: 25px;
 }
 
 /*Todos los iconos con los que se puede interactuar (no se puede interactuar con el de la estrella*/
@@ -61,7 +68,7 @@ body {
 .card-container--title h1 {
     margin-left: 20px;
     font-weight: 800;
-    font-size: 25px;
+    font-size: 30px;
     color: var(--DarkPurple);
 }
 
@@ -101,4 +108,30 @@ body {
     height: 1px;
     margin-top: 18px;
     background: var(--LightPink);
-} 
+}
+
+@media (min-width: 540px) {
+
+    .card-container{
+        padding: 25px;
+    }
+
+    .main-container--background-img {
+        display: none;
+    }
+
+    .main-container--background-desktop{
+        display: block;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1000px) {
+    .card-container{
+        top: 50%;
+    }
+
+    .card-container--title h1{
+        font-size: 30px;
+    }
+}
