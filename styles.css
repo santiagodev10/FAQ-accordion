@@ -62,7 +62,20 @@ body {
 /*Todos los iconos con los que se puede interactuar (no se puede interactuar con el de la estrella*/
 .interactive-icons {
     width: 25px;
-    margin-left: 16px;
+    height: 25px;
+    padding: 12px;
+    margin-left: 12px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.plus-icon {
+    background-image: url(./faq-accordion-main/assets/images/icon-plus.svg);
+}
+
+.minus-icon {
+    background-image: url(./faq-accordion-main/assets/images/icon-minus.svg);
 }
 
 .card-container--title h1 {
@@ -92,8 +105,15 @@ body {
     color: rgb(173, 40, 235);
 }
 
-.item--paragraph-drop {
+.item--paragraph-drop-inactive {
     display: none;
+}
+
+.item--paragraph-drop-active {
+    display: block;
+}
+
+.item--paragraph-drop {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 400;
